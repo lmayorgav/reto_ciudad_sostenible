@@ -1254,6 +1254,7 @@ pre code {
   .row-cols-lg-4 > * {
     flex: 0 0 25%;
     max-width: 25%;
+      
   }
 
   .row-cols-lg-5 > * {
@@ -1290,6 +1291,8 @@ pre code {
   .col-lg-4 {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
+      text-align: center;
+      
   }
 
   .col-lg-5 {
@@ -2832,8 +2835,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #026530;
+  border-color: #026530;
 }
 .btn-outline-light:hover {
   color: #212529;
@@ -6116,7 +6119,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #2c3e50 !important;
+  background-color: #026530 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -10047,10 +10050,10 @@ h3 {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: #00915B;
 }
 .divider-custom.divider-light .divider-custom-icon {
-  color: #fff !important;
+  color: #00915B !important;
 }
 
 .btn-xl {
@@ -10150,6 +10153,7 @@ h3 {
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
+    color: #00915B;
 }
 .masthead .masthead-avatar {
   width: 40rem;
@@ -10261,12 +10265,12 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
+  background-color: #026530;
   color: #fff;
 }
 
 .copyright {
-  background-color: #1a252f;
+  background-color: #fff;
 }
 
 /*****************/
@@ -10342,7 +10346,26 @@ form .row:first-child .floating-label-form-group {
 }
 
 .contenedor_padlet{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     width: 75%;
+    
     margin: 0 auto;
+}
+
+.contenedor_padlet iframe{
+    height: 80vh;
+}
+.prueba{
+    display flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+    color: #026530;
+}
+.lista{
+    width: 50%;
+    font-size: 2rem;
 }
