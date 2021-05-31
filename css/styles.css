@@ -201,6 +201,12 @@ img {
   border-style: none;
 }
 
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -2835,8 +2841,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #026530;
-  border-color: #026530;
+  color: white;
+  border-color: transparent;
 }
 .btn-outline-light:hover {
   color: #212529;
@@ -10155,8 +10161,11 @@ h3 {
   font-size: 1.25rem;
     color: #00915B;
 }
-.masthead .masthead-avatar {
-  width: 40rem;
+
+@media (min-width: 768px) {
+  .masthead .masthead-avatar {
+    width: 40rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10346,26 +10355,191 @@ form .row:first-child .floating-label-form-group {
 }
 
 .contenedor_padlet{
-    display: flex;
-    align-items: center;
-    width: 75%;
-    
+    width: 95%;
     margin: 0 auto;
 }
 
 .contenedor_padlet iframe{
     height: 80vh;
 }
+
+/* cambios */
+
+.footer__edited {
+  display:flex;
+  justify-content: space-around;
+}
+
 .prueba{
-    display flex;
-    align-items: center;
-    align-content: center;
     text-align: center;
     width: 25%;
     margin: 0 auto;
     color: #026530;
 }
+
+.container.prueba{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    min-width: 131.25px;
+    margin: 0 auto;
+    color: #026530;
+}
+
+.container.prueba small{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container.prueba small img:nth-child(1){
+    margin-right: 4rem;
+}
+
+.container.prueba small img:nth-child(2){
+    margin-left: 4rem;
+}
+
+@media (max-width: 768px) {
+    .container.prueba small{
+        flex-direction: column;
+    }
+
+    .container.prueba small img:nth-child(1){
+        margin-right: 0;
+    }
+
+    .container.prueba small img:nth-child(2){
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #contactForm {
+        font-size: 0.8rem;
+    }
+}
+
 .lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
-    font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+    .lista {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    ol.prueba.lista li {
+        font-size: 1.25rem;
+    }
+}
+
+ol.prueba.lista li {
+    font-size: 1.75rem;
+}
+
+ol.prueba.lista li:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+    ol.prueba.lista li {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    ol.prueba.lista li {
+        font-size: 1.25rem;
+    }
+}
+
+.bg-sesion01 {
+  background-color: #2ccdd7 !important;
+}
+
+.sesion01__enriquece {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.sesion01__enriquece :nth-child(n){
+  margin-bottom: 2rem;
+}
+
+.sesion01__enriquece :last-child {
+  margin-bottom: 0;
+}
+
+.sesion01__enriquece--tarjetas {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  column-gap: 3rem;
+}
+
+.sesion01__enriquece--tarjetas :first-child {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sesion01__enriquece--tarjetas p {
+  grid-column: 2/-1;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.instruccionesSnap4Arduino {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 150px);
+  gap: 2rem;
+  row-gap: 3rem;
+}
+
+.instruccionesSnap4Arduino__paso {
+  position: relative;
+  margin: 0 auto;
+}
+
+.instruccionesSnap4Arduino__paso--numero {
+  position: absolute;
+  content: "";
+
+  width: 2rem;
+  height: 2rem;
+
+  left: -1rem;
+  top: -1rem;
+
+  background-color: gray;
+  margin: 0;
+  padding: 0.5rem;
+  padding-top: 0.25rem;
+  border-radius: 1000px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.instruccionesSnap4Arduino__paso--img {
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.contenedorSnap4Arduino {
+  width: 100%;
+  height: 75vh;
+
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.contenedorSnap4Arduino iframe {
+  width: 100%;
+  height: 100%;
 }
