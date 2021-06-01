@@ -10427,6 +10427,10 @@ form .row:first-child .floating-label-form-group {
     width: 50%;
 }
 
+.lista.sesion02{
+  width: 75%;
+}
+
 @media (max-width: 992px) {
     .lista {
         width: 75%;
@@ -10472,14 +10476,12 @@ ol.prueba.lista li:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.sesion01__enriquece :last-child {
-  margin-bottom: 0;
-}
 
 .sesion01__enriquece--tarjetas {
   display: grid;
   grid-template-columns: 125px 1fr;
   column-gap: 3rem;
+  height: 100%;
 }
 
 .sesion01__enriquece--tarjetas :first-child {
@@ -10492,6 +10494,20 @@ ol.prueba.lista li:not(:last-child) {
   text-align: center;
   font-size: 1.15rem;
   font-weight: 500;
+  margin: auto;
+}
+
+.contenedor__mapa {
+  width: 100;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor__mapa--img {
+  box-shadow: 0 0 2rem 1rem #000;
 }
 
 .instruccionesSnap4Arduino {
