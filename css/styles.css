@@ -10467,9 +10467,17 @@ ol.prueba.lista li:not(:last-child) {
   background-color: #2ccdd7 !important;
 }
 
+.bg-sesion03 {
+  background-color: #c6f6c2 !important;
+}
+
 .sesion01__enriquece {
   width: 85%;
   margin: 0 auto;
+}
+
+.sesion01__enriquece.sesion03 {
+  color: #026530;
 }
 
 .sesion01__enriquece :nth-child(n){
@@ -10513,14 +10521,22 @@ ol.prueba.lista li:not(:last-child) {
 .instruccionesSnap4Arduino {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 150px);
-  gap: 2rem;
-  row-gap: 3rem;
+  grid-template-rows: 125px 150px repeat(3, 200px);
+  gap: 1rem;
+  row-gap: 4rem;
+  height: 100%;
+  margin-bottom: 4rem;
+}
+
+.instruccionesSnap4Arduino.segundaParte {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 125px);
+
 }
 
 .instruccionesSnap4Arduino__paso {
   position: relative;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .instruccionesSnap4Arduino__paso--numero {
@@ -10533,7 +10549,7 @@ ol.prueba.lista li:not(:last-child) {
   left: -1rem;
   top: -1rem;
 
-  background-color: gray;
+  background-color: #a71d2a;
   margin: 0;
   padding: 0.5rem;
   padding-top: 0.25rem;
@@ -10547,6 +10563,10 @@ ol.prueba.lista li:not(:last-child) {
   max-height: 100%;
 }
 
+.divider-custom-line.pasos {
+  max-width: 100%;
+}
+
 .contenedorSnap4Arduino {
   width: 100%;
   height: 75vh;
@@ -10558,4 +10578,22 @@ ol.prueba.lista li:not(:last-child) {
 .contenedorSnap4Arduino iframe {
   width: 100%;
   height: 100%;
+}
+
+.seccion__descifra {
+  color: rgb(23, 162, 184);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seccion__descifra :not(:last-child) {
+  margin: 1rem 0 2rem 0;
+}
+
+.seccion__descifra--imagenes img {
+  margin: 0 4rem;
+  width: 250px;
 }
