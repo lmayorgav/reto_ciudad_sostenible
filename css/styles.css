@@ -10528,9 +10528,22 @@ ol.prueba.lista li:not(:last-child) {
   margin-bottom: 4rem;
 }
 
+.instruccionesSnap4Arduino.sesion07 {
+  grid-template-rows: 125px 150px repeat(2, 200px);
+}
+
 .instruccionesSnap4Arduino.segundaParte {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 125px);
+}
+
+.instruccionesSnap4Arduino.segundaParte.sesion07 {
+  grid-template-rows: repeat(3, 125px);
+
+}
+
+.instruccionesSnap4Arduino.terceraParte {
+  grid-template-rows: repeat(4, 200px);
 
 }
 
